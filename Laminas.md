@@ -1,263 +1,355 @@
-## Wiki Education Foundation-supported course assignment
+**Laminas Project** (formerly **Zend Framework** or **ZF**) is an [open
+source](open-source_software "wikilink"),
+[object-oriented](object-oriented "wikilink") [web application
+framework](web_application_framework "wikilink") implemented in [PHP
+7](PHP_7 "wikilink") and licensed under the [New BSD
+License](New_BSD_License "wikilink").[^1] The framework is basically a
+collection of professional [PHP](PHP "wikilink")[^2]-based packages.[^3]
+The framework uses various packages by the use of Composer as part of
+its package dependency managers; some of them are
+[PHPUnit](PHPUnit "wikilink") for testing all packages, Travis CI for
+continuous Integration Services. Laminas provides to users a support of
+the [model–view–controller](model–view–controller "wikilink") (MVC) in
+combination with Front Controller solution.[^4] MVC implementation in
+Laminas has five main areas. The [router](Router_(computing) "wikilink")
+and dispatcher functions to decide which controller to run based on data
+from [URL](Uniform_Resource_Locator "wikilink"), and controller
+functions in combination with the model and view to develop and create
+the final web page.[^5]
 
-<img src="Sciences_humaines.svg" title="Sciences_humaines.svg"
-width="40" alt="Sciences_humaines.svg" /> This article is or was the
-subject of a Wiki Education Foundation-supported course assignment.
-Further details are available [on the course
-page](Wikipedia:Wiki_Ed/North_Carolina_State_University/Object_Oriented_Design_and_Development_(Spring_2017) "wikilink").
-Student editor(s): [Qaiss.alokozai](User:Qaiss.alokozai "wikilink").
+On 17 April 2019 it was announced[^6] that the framework is
+transitioning into an open source project hosted by the [Linux
+Foundation](Linux_Foundation "wikilink") to be known as Laminas.
 
-## Cleanup
+## License
 
-I am not a wikipedian so I don't know the exact policies (maybe
-[Wikipedia:NOTGUIDE](Wikipedia:NOTGUIDE "wikilink") and
-[Wikipedia:NPOV](Wikipedia:NPOV "wikilink")), but I do know for sure
-that an article shouldn't read like an about page mixed together with a
-getting started guide. I added the cleanup rewrite. Feel free to change
-it whatever is appropriate if you know more about the applicable
-policies than me.
-[110.22.52.34](Special:Contributions/110.22.52.34 "wikilink")
-([talk](User_talk:110.22.52.34 "wikilink"))
-<small class="autosigned">—Preceding
-[undated](Wikipedia:Signatures "wikilink") comment added 15:16, 4 April
-2017 (UTC)</small>
+Laminas is licensed under the [Open Source
+Initiative](Open_Source_Initiative "wikilink") (OSI)-approved [New BSD
+License](New_BSD_License "wikilink"). All new contributions are required
+to be accompanied with [Developer Certificate of
+Origin](Developer_Certificate_of_Origin "wikilink") affirmation.[^7]
 
-## Neutrality
+Zend Framework also licensed under New BSD License. For ZF1 all code
+contributors were required to sign a [Contributor License
+Agreement](Contributor_License_Agreement "wikilink") (CLA) based on the
+[Apache Software Foundation](Apache_Software_Foundation "wikilink")’s
+CLA. The licensing and contribution policies were established to prevent
+intellectual property issues for [commercial](Commerce "wikilink") ZF
+users, according to Zend's Andi Gutmans.[^8] ZF2 and later is CLA
+free.[^9]
 
-I think the article is a bit biased and I'm not sure if it forfills the
-requirements for having an article -- <font color="green">**Snailwalker
-\|**
-</font>[**talk**](http://en.wikipedia.org/wiki/User_talk:Snailwalker)
-13:51, 5 April 2006 (UTC)
+## Components and versioning
 
-  
-The article as it currently exists reads like an advertisement for Zend.
-To say that it could be restated a bit more objectively does not
-diminish what Zend has accomplished with the framework. As to whether it
-deserves to be an article, I personally find it useful to have a
-reference point to explain new technologies - [Mark
-Dixon](User:Elmarco "wikilink") 19:07, 16 April 2006 (UTC)
+Starting with Zend Framework version 2.5, components are split into
+independently versioned packages and zendframework/zendframework is
+converted into a Composer meta-package. Framework components introduced
+after the split are not added to the meta-package.
 
-  
-Zend Framework is yet well-known in PHP community, so we should leave
-the article as it is now. [LaminatedCat](User:LaminatedCat "wikilink")
-10:45, 7 April 2007 (UTC)
+While zendframework/zendframework meta-package release version remains
+at 3.0.0, it will instruct Composer to install latest compatible
+versions of the framework components, as per the semantic versioning.
+Such that zend-mvc component will be installed at its current version
+3.1.1, zend-servicemanager at version 3.3.0 and zend-form at version
+2.10.2.
 
-  
-Why should be leave a [biased](WP:NPOV "wikilink") article just because
-the technology is well-known? I'm going to start making it fit neutral
-point of view policy. [Superm401](User:Superm401 "wikilink") -
-[Talk](User_talk:Superm401 "wikilink") 08:40, 9 April 2007 (UTC)
+Laminas includes following components:[^10]
 
-In the interest of full disclosure, I'm the project lead for Zend
-Framework at Zend Technologies. That said, I'm very interested in this
-article representing a full and neutral viewpoint of ZF. At the moment
-it is out of date and doesn't reflect the current goals of the project
-well; I've made some minor edits to update some information that I hope
-you will agree are not biased in any way towards Zend. Can you please
-let me know what the concerns RE: neutrality have been in the past so
-that I avoid any changes that might bring the neutrality of this article
-in to question? Thanks. [wllm](User:wllm "wikilink") 08:47 16 December
-2007 (UTC)
-
-  
-Hi all, there is some very out-of-date information on this page, and I
-would really like to update it to reflect the latest. I didn't want to
-do this, however, until I understood more about the concerns involving
-neutrality. If any of the users above are still watching this page,
-please respond via this page or email. If I don't get any responses
-after 1 week, I plan to update this page because we have a very
-important release coming up and expect more interest in any info online-
-wikipedia being not the least of information sources! :) In any case, I
-will try to get the language as neutral as I can, and I plan to have
-someone outside Zend review it before submitting any changes. Thanks!
-[wllm](User:wllm "wikilink") 04:38 22 December 2007 (UTC)
-
-  
-OK, I'm going ahead with the edits. This will be a major update to this
-page. Please mail me if you find anything less-than-neutral :) in this
-article. We're interested in updated and complete information, not
-biased information. Thanks! [wllm](User:wllm "wikilink") 19:45, 3
-January 2008 (UTC) <small>—Preceding
-[unsigned](Wikipedia:Signatures "wikilink") comment added by
-[63.205.162.114](Special:Contributions/63.205.162.114 "wikilink")
-([talk](User_talk:63.205.162.114 "wikilink")) </small>
-
-  
-The article, particularly the introduction, still reads like an advert.
-Disclaimer: I love ZF. But I'm afraid it may be too difficult for you to
-edit this article and remain neutral.
-[demonburrito](User:Demonburrito "wikilink")
-([talk](User_talk:Demonburrito "wikilink")) 08:01, 11 February 2009
-(UTC)
-
-## It is a new framework
-
-This framework is so new(2006, March). It has a long way to got, and
-their goal is to provide some tools to help developers and complete
-their library and rule to become an acceptable framework. It is a very
-promising collection any way as I am using it. It has an implementation
-of MVC design pattern.
-
-## External Links
-
-What external links are appropriate for this page? There was a link to
-the Zend Framework Forum that was deleted. What is the reason? I have
-read the link. If you think it should be deleted then state your reason
-here. <small>—Preceding [unsigned](Wikipedia:Signatures "wikilink")
-comment added by [Michael Ray](User:Michael_Ray "wikilink")
-([talk](User_talk:Michael_Ray "wikilink") •
-[contribs](Special:Contributions/Michael_Ray "wikilink")) 19:54, 27
-February 2008 (UTC)</small>
-
-  
-It's a forum, which should normally be avoided. See
-[Wikipedia:El#Links_normally_to_be_avoided](Wikipedia:El#Links_normally_to_be_avoided "wikilink")
---[Ronz](User:Ronz "wikilink") ([talk](User_talk:Ronz "wikilink"))
-20:00, 27 February 2008 (UTC)
-
-## Cleaned
-
-I've sourced what could be sourced, and removed what could not be
-sourced, with the exception of the Features section... Unless anybody
-has any objections, I feel okay with removing the refimprove. And to
-wllm... I'm sorry I had to butcher your edits (I personally like ZF very
-much), but I think you'll find that people who frequent wikipedia can
-smell advertising a mile away, and you'll actually have more goodwill
-from everyone with a neutral, encyclopedic and sourced article.
-[demonburrito](User:Demonburrito "wikilink")
-([talk](User_talk:Demonburrito "wikilink")) 13:40, 11 February 2009
-(UTC)
-
-## Links to non-english communities
-
-Is there any point to have links to French, Polish and Spanish Zend
-"communities" in this article? I think these links are not useful to
-English speakers, and for those who do need them they can find them on
-the French, Polish, etc. article. So if there are no objections, I'll
-remove them in a few days. Thanks.
-[Laurent](User:Laurent1979 "wikilink")
-([talk](User_talk:Laurent1979 "wikilink")) 14:31, 23 March 2009 (UTC)
-
-  
-Actually, according to
-[Wikipedia:El#Non-English_language_content](Wikipedia:El#Non-English_language_content "wikilink"),
-these links shouldn't be here at all so I'm going to remove them now.
-[Laurent](User:Laurent1979 "wikilink")
-([talk](User_talk:Laurent1979 "wikilink")) 14:33, 23 March 2009 (UTC)
-
-## Biased article, please revise
-
-The article reads like an advertisement, and should either be edited to
-show only the relevant facts, not ".. has reached production quality" or
-".. a code formatter, code completion, parameter assist, and more.". I
-expect to see these things on the side of a software box at Best Buy, or
-on a software website, it has no place here.
-<span style="font-size: smaller;" class="autosigned">— Preceding
-[unsigned](Wikipedia:Signatures "wikilink") comment added by
-[24.182.6.2](Special:Contributions/24.182.6.2 "wikilink")
-([talk](User_talk:24.182.6.2 "wikilink")) 06:19, 21 September 2012
-(UTC)</span>
-
-## External links modified
-
-Hello fellow Wikipedians,
-
-I have just modified on [Zend Framework](Zend_Framework "wikilink").
-Please take a moment to review [my
-edit](https://en.wikipedia.org/w/index.php?diff=prev&oldid=730830034).
-If you have any questions, or need the bot to ignore the links, or the
-page altogether, please visit [this simple
-FaQ](User:Cyberpower678/FaQs#InternetArchiveBot "wikilink") for
-additional information. I made the following changes:
-
--   Added archive
-    <http://web.archive.org/web/20091201014623/http://www.zend.com:80/en/company/news/press/zend-teams-with-ibm-microsoft-rackspace-and-other-cloud-leaders-on-open-source-initiative-to-drive-cloud-application-development>
-    to
-    <http://www.zend.com/en/company/news/press/zend-teams-with-ibm-microsoft-rackspace-and-other-cloud-leaders-on-open-source-initiative-to-drive-cloud-application-development>
-
-When you have finished reviewing my changes, please set the *checked*
-parameter below to **true** or **failed** to let others know
-(documentation at ).
-
-Cheers.—[**<span style="color:darkgrey;font-family:monospace">InternetArchiveBot</span>**](User:InternetArchiveBot "wikilink")
-<span style="color:green;font-family:Rockwell">([Report
-bug](User_talk:InternetArchiveBot "wikilink"))</span> 10:36, 21 July
-2016 (UTC)
-
-## changes to introduction
-
-I am working on this article as there is complete lack of coherence and
-minimum use of sources. I have added some basic intro lines which are
-cited from Zend's website introduction page. Following are the various
-sources that I am planning to add. Please review and if you think that
-more sources are needed or change some of the.  
-1. Framework, Z. (2010). Zend Framework.Chicago  
-2. Supaartagorn, C. (2011). PHP Framework for database management based
-on MVC pattern. International Journal of Computer Science & Information
-Technology (IJCSIT), 3(2), 251-258.  
-3. Lancor, L., & Katha, S. (2013, March). Analyzing PHP frameworks for
-use in a project-based software engineering course. In Proceeding of the
-44th ACM technical symposium on Computer science education (pp.
-519-524). ACM.Chicago  
-4. Paikens, A., & Arnicans, G. (2008). Use of design patterns in
-PHP-based web application frameworks. Scientific Papers University of
-Latvia, Computer Science and Information Technologies, 733,
-53-71.Chicago  
-More edits coming soon. Please looking forward to your comments.  
-<small class="autosigned">— Preceding
-[unsigned](Wikipedia:Signatures "wikilink") comment added by
-[Qaiss.alokozai](User:Qaiss.alokozai "wikilink")
-([talk](User_talk:Qaiss.alokozai#top "wikilink") •
-[contribs](Special:Contributions/Qaiss.alokozai "wikilink")) 03:17, 5
-February 2017 (UTC)</small>
-
-## The Anatomy of Zend Framework
-
-I am adding a section which will cover the anatomy of Zend Framework. It
-will be a detailed and informative based on the literature. Here is one
-of the document that is promising to further enhance this document.
-
-<http://manning-content.s3.amazonaws.com/download/4/4339124-b6aa-4fdc-bdf9-178c3f3adbd7/allench2.pdf>
-
-Thank you, Q <small class="autosigned">— Preceding
-[unsigned](Wikipedia:Signatures "wikilink") comment added by
-[152.7.224.2](Special:Contributions/152.7.224.2 "wikilink")
-([talk](User_talk:152.7.224.2#top "wikilink")) 05:32, 6 February 2017
-(UTC)</small>
+| Component                     | Description                                                                                                                          |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| Authentication                | Authenticate users via a variety of adapters, and provide the authenticated identity to your application.                            |
+| Barcode                       | Programmatically create and render barcodes as images or in PDFs.                                                                    |
+| Cache                         | Caching implementation with a variety of storage options, as well as codified caching strategies for callbacks, classes, and output. |
+| Captcha                       | Generate and validate CAPTCHAs using Figlets, images, ReCaptcha, and more.                                                           |
+| Code                          | Extensions to the PHP Reflection API, static code scanning, and code generation.                                                     |
+| Component Installer           | Composer plugin for injecting modules and configuration providers into application configuration.                                    |
+| Config                        | Read and write configuration files.                                                                                                  |
+| Config Aggregator             | Aggregate and merge configuration from a variety of sources.                                                                         |
+| Console                       | Build console applications using getopt syntax or routing, complete with prompts                                                     |
+| Crypt                         | Strong cryptography tools and password hashing.                                                                                      |
+| DB                            | Database abstraction layer, SQL abstraction, result set abstraction, and RowDataGateway and TableDataGateway implementations.        |
+| Debug                         | Safely dump debug information to HTML.                                                                                               |
+| DI                            | Automated dependency injection and instance manager.                                                                                 |
+| Diactoros                     | PSR-7 HTTP message implementations.                                                                                                  |
+| DOM                           | Query HTML and XML documents using XPath or CSS selectors.                                                                           |
+| Escaper                       | Securely and safely escape HTML, HTML attributes, JavaScript, CSS, and URLs.                                                         |
+| EventManager                  | Implement events, signal slots, aspects, and observers!                                                                              |
+| Expressive                    | PSR-7 middleware in minutes.                                                                                                         |
+| Feed                          | Consume and generate Atom and RSS feeds, and interact with Pubsubhubbub.                                                             |
+| File                          | Locate PHP classfiles.                                                                                                               |
+| Filter                        | Programmatically filter and normalize data and files.                                                                                |
+| Form                          | Validate and display simple and complex forms, casting forms to business objects and vice versa.                                     |
+| HAL for PSR-7                 | Hypertext Application Language (HAL) for PSR-7.                                                                                      |
+| HTTP                          | HTTP message and header abstractions, and HTTP client implementation. (Not a PSR-7 implementation.)                                  |
+| Hydrator                      | Serialize objects to arrays, and vice versa.                                                                                         |
+| InputFilter                   | Normalize and validate input sets from the web, APIs, the CLI, and more, including files.                                            |
+| Internationalization          | Provide translations for your application, and filter and validate internationalized values.                                         |
+| JSON                          | De/Serialize JSON in PHP, including JavaScript expressions.                                                                          |
+| JSON-RPC Server               | JSON-RPC implementation for PHP.                                                                                                     |
+| LDAP                          | Perform LDAP operations, including binding, searching and modifying entries in an LDAP directory.                                    |
+| Loader                        | Autoloading and plugin loading strategies.                                                                                           |
+| Log                           | Robust, composite logger with filtering, formatting, and PSR-3 support.                                                              |
+| Mail                          | Parse, create, store, and send email messages, using a variety of storage and transport protocols.                                   |
+| Math                          | Create cryptographically secure pseudo-random numbers, and manage big integers.                                                      |
+| Memory                        | Manage data in an environment with limited memory.                                                                                   |
+| MIME                          | Create and parse MIME messages and parts.                                                                                            |
+| Module Manager                | Modular application system for zend-mvc applications.                                                                                |
+| MVC                           | Laminas's event-driven MVC layer, including MVC Applications, Controllers, and Plugins.                                              |
+| MVC-Console integration       | Integration between zend-mvc and zend-console.                                                                                       |
+| MVC-i18n integration          | Integration between zend-mvc and zend-i18n.                                                                                          |
+| fileprg() plugin              | Post/Redirect/Get plugin with file upload handling for zend-mvc controllers.                                                         |
+| flashmessenger() plugin       | Plugin for creating and exposing flash messages via zend-mvc controllers.                                                            |
+| identity() plugin             | Plugin for retrieving the current authenticated identity within zend-mvc controllers.                                                |
+| prg() plugin                  | Post/Redirect/Get plugin for zend-mvc controllers.                                                                                   |
+| Navigation                    | Manage trees of pointers to web pages in order to build navigation systems.                                                          |
+| Paginator                     | Paginate collections of data from arbitrary sources.                                                                                 |
+| ACL                           | Create, manage, and query access control lists.                                                                                      |
+| RBAC                          | Provide and query Role-Based Access Controls for your application.                                                                   |
+| Problem Details               | PSR-7 Problem Details for HTTP API responses and middleware.                                                                         |
+| ProgressBar                   | Create and update progress bars in different environments.                                                                           |
+| PSR-7 Bridge                  | PSR-7 \<-\> zend-http message conversions.                                                                                           |
+| Router                        | Flexible routing system for HTTP and console applications.                                                                           |
+| Serializer                    | Serialize and deserialize PHP structures to a variety of representations.                                                            |
+| Server                        | Create Reflection-based RPC servers.                                                                                                 |
+| ServiceManager                | Factory-Driven Dependency Injection Container                                                                                        |
+| ServiceManager-Di integration | zend-di integration for zend-servicemanager                                                                                          |
+| Session                       | Object-oriented interface to PHP sessions and storage.                                                                               |
+| SOAP                          | Create, serve, and access SOAP applications, and parse and generate WSDL.                                                            |
+| Stdlib                        | SPL extensions, array utilities, error handlers, and more.                                                                           |
+| Stratigility                  | PSR-7 middleware foundation for building and dispatching middleware pipelines.                                                       |
+| Tag                           | Manipulate and weight taggable items, and create tag clouds.                                                                         |
+| Test                          | Tools to facilitate unit testing of zend-mvc applications.                                                                           |
+| Text                          | Create FIGlets and text-based tables.                                                                                                |
+| URI                           | Object oriented interface to URIs, with facilities for validation.                                                                   |
+| Validator                     | Validation classes for a wide range of domains, and the ability to chain validators to create complex validation criteria.           |
+| View                          | Flexible view layer supporting and providing multiple view layers, helpers, and more.                                                |
+| XML-RPC                       | Fully featured XML-RPC server and client implementations.                                                                            |
+| XML2JSON                      | Convert XML documents to JSON.                                                                                                       |
 
 ## Installation
 
-This section is focused on the installation of Zend Framework. Details
-will be given from the documentation source of Zend Framework. Please
-let me know if you have any recommendations.
-<small class="autosigned">— Preceding
-[unsigned](Wikipedia:Signatures "wikilink") comment added by
-[Qaiss.alokozai](User:Qaiss.alokozai "wikilink")
-([talk](User_talk:Qaiss.alokozai#top "wikilink") •
-[contribs](Special:Contributions/Qaiss.alokozai "wikilink")) 20:25, 6
-February 2017 (UTC)</small>
+Officially supported install method is via
+[Composer](Composer_(software) "wikilink") package manager.
 
-## Literature on Zend Framework
+Laminas provides meta-package that includes 61 component but recommended
+way is to install required framework components individually. Composer
+will resolve and install all additional dependencies.
 
-In order to further extend the scope of the Zend Framework literature I
-am planning to add from the following credible source.
+For instance, if you need MVC package, you can install with the
+following command:
 
-Allen, R., Lo, N., & Brown, S. (2009). Zend framework in action.
-Manning. Porebski, B., Przystalski, K., & Nowak, L. (2011). Building PHP
-Applications with Symfony, CakePHP, and Zend Framework. John Wiley and
-Sons. Pope, K. (2009). Zend framework 1.8 web application development.
-Packt Publishing Ltd. Heino, N., Dietzold, S., Martin, M., & Auer, S.
-(2009). Developing semantic web applications with the ontowiki
-framework. In Networked Knowledge-Networked Media (pp. 61-77). Springer
-Berlin Heidelberg. Lancor, L., & Katha, S. (2013, March). Analyzing PHP
-frameworks for use in a project-based software engineering course. In
-Proceeding of the 44th ACM technical symposium on Computer science
-education (pp. 519-524). ACM.
+``` console
+$ composer require zendframework/zend-mvc
+```
 
-Please comment/feedback! Thanks, Q <small class="autosigned">— Preceding
-[unsigned](Wikipedia:Signatures "wikilink") comment added by
-[Qaiss.alokozai](User:Qaiss.alokozai "wikilink")
-([talk](User_talk:Qaiss.alokozai#top "wikilink") •
-[contribs](Special:Contributions/Qaiss.alokozai "wikilink")) 06:08, 9
-February 2017 (UTC)</small>
+Full list of components is available in Zend Framework
+documentation.[^11]
+
+## Anatomy of the framework
+
+Laminas follows configuration-over-convention approach and does not
+impose any particular application structure. Skeleton applications for
+zend-mvc and zend-expressive are available and provide everything
+necessary to run applications and to serve as a good starting point.
+
+## Sponsor and partners
+
+[Zend Technologies](Zend_Technologies "wikilink"), co-founded by
+[PHP](PHP "wikilink") core contributors [Andi
+Gutmans](Andi_Gutmans "wikilink") and [Zeev
+Suraski](Zeev_Suraski "wikilink"), was the original corporate sponsor of
+Zend Framework.[^12] Technology partners include
+[IBM](International_Business_Machines "wikilink"),[^13]
+[Google](Google "wikilink"),[^14]
+[Microsoft](Microsoft "wikilink"),[^15] [Adobe
+Systems](Adobe_Systems "wikilink"),[^16] and
+[StrikeIron](Strikeiron "wikilink").[^17]
+
+## Features
+
+Laminas features include:[^18]
+
+-   All components are fully object-oriented PHP 5 and are E_STRICT
+    compliant, which helps in the development of building tests and
+    writing [codes](codes "wikilink") in a bug-free and crash-proof
+    application manner.[^19]
+-   [Use-at-will](Loose_coupling "wikilink") architecture with loosely
+    coupled components and minimal interdependencies
+-   Extensible [MVC](Model–view–controller "wikilink") implementation
+    supporting layouts and PHP-based templates by default
+-   Support for multiple database systems and vendors, including
+    [MariaDB](MariaDB "wikilink"), [MySQL](MySQL "wikilink"),
+    [Oracle](Oracle_Database "wikilink"), [IBM Db2](IBM_Db2 "wikilink"),
+    [Microsoft SQL Server](Microsoft_SQL_Server "wikilink"),
+    [PostgreSQL](PostgreSQL "wikilink"), [SQLite](SQLite "wikilink"),
+    and [Informix Dynamic Server](Informix_Dynamic_Server "wikilink")
+-   Email composition and delivery, retrieval via
+    [mbox](mbox "wikilink"), [Maildir](Maildir "wikilink"),
+    [POP3](POP3 "wikilink") and [IMAP4](IMAP4 "wikilink")
+-   Flexible caching sub-system with support for many types of backends,
+    such as [memory](Random_Access_Memory "wikilink") or a [file
+    system](file_system "wikilink").
+-   With the help of [remote procedure
+    call](remote_procedure_call "wikilink") (RPC) and
+    REST([Representational State
+    Transfer](Representational_State_Transfer "wikilink")) services,
+    Zend Apigility helps developers to create APIs, authentication of
+    [APIs](Application_programming_interface "wikilink"), documentation
+    of APIs, Easy Modification[^20]
+
+## Development of applications
+
+Laminas applications can run on any PHP stack that fulfills the
+technical requirements. Zend Technologies provides a PHP stack, [Zend
+Server](Zend_Server "wikilink") (or Zend Server Community Edition),
+which is advertised to be optimized for running Laminas applications.
+Zend Server includes Zend Framework in its installers, along with
+[PHP](PHP "wikilink") and all required extensions. According to Zend
+Technologies, Zend Server provides improved performance for PHP and
+especially Zend Framework applications through opcode acceleration and
+several caching capabilities, and includes application monitoring and
+diagnostics facilities.[^21] [Zend Studio](Zend_Studio "wikilink") is an
+IDE that includes features specifically to integrate with Zend
+Framework. It provides an MVC view, MVC code generation based on
+Zend_Tool (a component of the Zend Framework), a code formatter, code
+completion, parameter assist, and more.[^22] Zend Studio is not free
+software, whereas the Zend Framework and Zend Server Community Edition
+are free. Zend Server is compatible with common debugging tools such as
+[Xdebug](Xdebug "wikilink"). Other developers may want to use a
+different PHP stack and another IDE such as [Eclipse
+PDT](Eclipse_PDT "wikilink") which works well together with Zend Server.
+A pre configured, free version of [Eclipse PDT](Eclipse_PDT "wikilink")
+with Zend Debug is available on the Zend web site.
+
+## Code, documentation, and test standards
+
+Code contributions to Laminas are subject to rigorous code,
+[documentation](documentation "wikilink"), and test standards. All code
+must meet project coding standards and [unit
+tests](unit_tests "wikilink") must reach 80% [code
+coverage](code_coverage "wikilink") before the corresponding code may be
+moved to the release branch.[^23]
+
+## Simple cloud API
+
+On September 22, 2009, [Zend Technologies](Zend_Technologies "wikilink")
+announced[^24] that it would be working with technology partners
+including [Microsoft](Microsoft "wikilink"), [IBM](IBM "wikilink"),
+[Rackspace](Rackspace "wikilink"), [Nirvanix](Nirvanix "wikilink"), and
+[GoGrid](GoGrid "wikilink") along with the Zend Framework community to
+develop a common API to [cloud](Cloud_computing "wikilink") application
+services called the [Simple Cloud API](Simple_Cloud_API "wikilink").
+This project is part of Zend Framework and will be hosted on the Zend
+Framework website,[^25] but a separate site called simplecloud.org[^26]
+has been launched to discuss and download the most current versions of
+the API. The Simple Cloud API and several Cloud Services are included in
+Zend Framework. The adapters to popular cloud services have reached
+production quality.
+
+## Current development
+
+Zend Framework 3.0 was released on June 28, 2016. It includes new
+components like a JSON RPC server, a XML to JSON converter, PSR-7
+functionality, and compatibility with PHP 7. Zend Framework 3.0 runs up
+to 4 times faster than Zend Framework 2, and the packages have been
+decoupled to allow for greater reuse.[^27] The contributors of Zend
+Framework are actively encouraging the use of Zend Framework version
+3.x. The stated end of life for Zend Framework 1 is 2016-09-28, and for
+Zend Framework 2 is 2018-03-31. The first development release of Zend
+Framework 2.0 was released on August 6, 2010.[^28] Changes made in this
+release were the removal of `require_once` statements, migration to PHP
+5.3 namespaces, a refactored test suite, a rewritten `Zend\Session`, and
+the addition of the new `Zend\Stdlib`. The second development release
+was on November 3, 2010.[^29] The first stable release of Zend Framework
+2.0 was released 5 September 2012.[^30]
+
+## See also
+
+-   [Comparison of web
+    frameworks](Comparison_of_server-side_web_frameworks "wikilink")
+-   [New BSD License](New_BSD_License "wikilink")
+-   [Zend Server](Zend_Server "wikilink")
+-   [Zend Studio](Zend_Studio "wikilink")
+
+## References
+
+## External links
+
+-   
+
+-   [Zend Framework](https://framework.zend.com/)
+
+[Category:Free computer
+libraries](Category:Free_computer_libraries "wikilink") [Category:Free
+content management
+systems](Category:Free_content_management_systems "wikilink")
+[Category:PHP frameworks](Category:PHP_frameworks "wikilink")
+[Category:Software using the BSD
+license](Category:Software_using_the_BSD_license "wikilink")
+[Category:Web frameworks](Category:Web_frameworks "wikilink")
+
+[^1]:
+
+[^2]:
+
+[^3]:
+
+[^4]: Supaartagorn, C. (2011). PHP Framework for database management
+    based on MVC pattern. *International Journal of Computer Science &
+    Information Technology (IJCSIT)*, *3*(2), 251-258.
+
+[^5]:
+
+[^6]:
+
+[^7]:
+
+[^8]:
+
+[^9]:
+
+[^10]:
+
+[^11]:
+
+[^12]:
+
+[^13]:
+
+[^14]:
+
+[^15]:
+
+[^16]:
+
+[^17]:
+
+[^18]:
+
+[^19]: [Why to Use Zend
+    Framework?](http://www.suntecoss.com/blog/why-to-use-zend-framework/)
+    By SuntecOSS, Retrieved, April 21st, 2016
+
+[^20]: [Zend’s Apigility, an Open Source API Builder for Developing
+    Quality
+    APIs](http://www.suntecoss.com/blog/zend-apigility-an-open-source-api-builder-for-developing-quality-apis/)
+    By SuntecOSS, Retrieved, May 19th, 2016
+
+[^21]:
+
+[^22]:
+
+[^23]:
+
+[^24]:
+
+[^25]:
+
+[^26]: [simplecloud.org](http://www.simplecloud.org)
+
+[^27]:
+
+[^28]:
+
+[^29]:
+
+[^30]:
