@@ -151,6 +151,23 @@ impose any particular application structure. Skeleton applications for
 zend-mvc and zend-expressive are available and provide everything
 necessary to run applications and to serve as a good starting point.
 
+## Laminas Project a Series of LF Projects, LLC
+
+Laminas Project is a [nonprofit entity](https://en.wikipedia.org/wiki/Nonprofit_organization)
+behind Laminas framework, formed by the [Linux
+Foundation](https://en.wikipedia.org/wiki/Linux_Foundation) in 2019 to provide
+a vendor-neutral home for the Zend Framework.(ref:
+https://www.linuxfoundation.org/blog/lf-forms-laminas-project/)
+
+Zend Framework codebase transitioned to Laminas repositories in january 2020,
+marking the official launch of the Laminas Project.
+(ref: https://framework.zend.com/blog/2020-01-24-laminas-launch.html)
+
+Laminas Project is governed by a Technical Steering Committee, under a technical charter with the Linux Foundation.
+
+Canonical location of Technical Charter and the list of the TSC members is
+under the Laminas Project technical-steering-committee repository on GitHub. https://github.com/laminas/technical-steering-committee
+
 ## Sponsor and partners
 
 [Zend Technologies](Zend_Technologies "wikilink"), co-founded by
